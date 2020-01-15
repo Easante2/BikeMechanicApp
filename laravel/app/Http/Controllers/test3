@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
+
+class test3 extends Controller
+{
+    public function tapi(){
+		return 'Hi Emmanuel, Here is the dat that you requested from Intellij';
+		
+		
+		//so when you start making you intellij project, sent a GET request to http://159.203.93.1/test and print 
+		//the response out to see if you get this message 'Hi Emmanuel, Here is the dat that you requested from Intellij';
+	}
+}
