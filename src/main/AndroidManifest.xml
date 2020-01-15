@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="uk.co.bikemandan.bikemechanicapp"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/BikeMaterialTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdminHomeActivity"
+            android:label="@string/title_activity_admin_home"
+
+            android:theme="@style/BikeMaterialTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity"/>
+        </activity>
+        <activity
+            android:name=".CustomerHomeActivity"
+            android:label="@string/title_activity_customer_home"
+            android:theme="@style/BikeMaterialTheme">
+        </activity>
+        <activity
+            android:name=".CustomerRegistrationActivity"
+            android:label="@string/title_activity_customer_registration"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/BikeMaterialTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity"/>
+        </activity>
+        <activity
+            android:name=".BikeRegistrationActivity"
+            android:label="@string/title_activity_bike_registration"
+            android:parentActivityName=".CustomerRegistrationActivity"
+            android:theme="@style/BikeMaterialTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.co.bikemandan.bikemechanicapp.CustomerRegistrationActivity"/>
+        </activity>
+        <activity
+            android:name=".AdminRequestActivity"
+            android:label="@string/title_activity_job_request"
+            android:parentActivityName=".AdminHomeActivity"
+            android:theme="@style/BikeMaterialTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.co.bikemandan.bikemechanicapp.AdminHomeActivity"/>
+        </activity>
+        <activity
+            android:name=".CustomerAppointmentActivity"
+            android:label="@string/title_activity_repair_request"
+            android:parentActivityName=".CustomerHomeActivity"
+            android:theme="@style/BikeMaterialTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.co.bikemandan.bikemechanicapp.CustomerHomeActivity"/>
+        </activity>
+        <activity android:name=".AdminMyProfileActivity"
+                  android:parentActivityName=".AdminHomeActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.co.bikemandan.bikemechanicapp.AdminHomeActivity"/>
+        </activity>
+        <activity android:name=".AdminRequestDatesActivity"
+            android:parentActivityName=".AdminRequestActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.co.bikemandan.bikemechanicapp.AdminRequestActivity"/>
+        </activity>
+        <activity android:name=".ForgotPasswordActivity"
+                  android:parentActivityName=".LoadPicActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.co.bikemandan.bikemechanicapp.LoginActivity"/>
+        </activity>
+        <activity android:name=".CustomerMyProfileActivity"
+                  android:parentActivityName=".CustomerHomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.co.bikemandan.bikemechanicapp.CustomerHomeActivity"/>
+        </activity>
+        <activity android:name=".AdminRepairsTodayActivity"
+                  android:parentActivityName=".AdminHomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.co.bikemandan.bikemechanicapp.AdminHomeActivity"/>
+        </activity>
+
+
+
+
+
+
+
+    </application>
+
+</manifest>

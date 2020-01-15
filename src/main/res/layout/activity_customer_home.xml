@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="uk.co.bikemandan.bikemechanicapp.CustomerHomeActivity"
+    android:background="#FAFAFA">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/BikeMaterialTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/BikeMaterialTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/myProfile"
+        android:src="@mipmap/profile_icon"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile"
+        android:textSize="20sp"
+        android:layout_marginTop="190dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make appointment"
+        android:textSize="20sp"
+        android:layout_marginTop="375dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report a Problem"
+        android:textSize="20sp"
+        android:layout_marginTop="525dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/repair_request"
+        android:layout_alignLeft="@+id/myProfile"
+        android:layout_alignStart="@+id/myProfile"
+        android:layout_marginTop="225dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/repair_request_icon"/>
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:id="@+id/report_problem_icon"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="382dp"
+        android:src="@mipmap/report_problem"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>

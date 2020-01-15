@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:background="#FAFAFA"
+        tools:context=".CustomerRegistrationActivity"
+        android:paddingTop="30dp">
+
+
+  <!--  <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/BikeMaterialTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/BikeMaterialTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingTop="30dp"
+            android:hint="@string/first_name_label"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingTop="7dp"
+            android:hint="@string/last_name_label"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/cust_passWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingTop="7dp"
+            android:hint="@string/password_label"
+            android:inputType="textPassword"
+            android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/cust_confrimPassWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingTop="7dp"
+                android:hint="@string/confirm_password_label"
+                android:inputType="textPassword"
+                android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/address1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingTop="7dp"
+            android:hint="@string/address_line_1"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/address2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingTop="7dp"
+            android:hint="@string/address_line_2"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/address3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingTop="7dp"
+            android:hint="@string/address_line_3"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/post_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingTop="7dp"
+            android:hint="@string/postcode_label"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/eMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingTop="7dp"
+            android:hint="@string/email_label"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/contact_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingTop="7dp"
+            android:hint="@string/contact_num_label"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/next_btn"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#FFEB3B"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>

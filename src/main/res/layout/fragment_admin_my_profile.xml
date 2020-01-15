@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:layout_marginTop="50dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+    <EditText
+        android:id="@+id/name_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/surname_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Surname"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/email_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/ad1_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ad1"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/ad2_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ad2"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/ad3_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ad3"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/postCode_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Post C"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/contact_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact No"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/pword_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter current password or change"
+            android:textSize="16sp"
+            android:inputType="textPassword"/>
+        <EditText
+            android:id="@+id/pWord_confirm_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirm_password_label"
+            android:inputType="textPassword"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/update_admin"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:text="Update"
+            android:background="#FFEB3B"
+            android:layout_marginTop="10dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+</android.support.v4.widget.NestedScrollView>

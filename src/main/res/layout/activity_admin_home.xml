@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".AdminHomeActivity"
+    android:background="#FAFAFA">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/BikeMaterialTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/BikeMaterialTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ImageView
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:id="@+id/admin_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:src="@mipmap/profile_icon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile"
+        android:textSize="20sp"
+        android:layout_marginTop="202dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:id="@+id/all_jobs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:src="@mipmap/job_request_list"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repair requests"
+        android:textSize="20sp"
+        android:layout_marginTop="369dp"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageView
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+        android:id="@+id/service_icon"
+        android:layout_marginTop="388dp"
+        android:src="@mipmap/service_icon"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repairs for today"
+        android:textSize="20sp"
+        android:layout_marginTop="525dp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

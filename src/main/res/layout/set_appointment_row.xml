@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/additional_date_set"
+        android:layout_width="115dp"
+        android:layout_height="50dp"
+        android:text="@string/date"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:onClick="onClick"
+        android:clickable="true"/>
+    <TextView
+        android:id="@+id/additional_time_set"
+        android:layout_width="115dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="luahsdf"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/additional_date_set"/>
+    <ImageView
+        android:id="@+id/_remove"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/ic_cancel_icn"
+        android:layout_toRightOf="@+id/additional_time_set"
+        android:clickable="true"/>
+
+
+
+
+</RelativeLayout>

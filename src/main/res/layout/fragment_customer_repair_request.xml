@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:isScrollContainer="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <EditText
+            android:id="@+id/problem_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/problem_title"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/bike_part_fault"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/bike_part_fault"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/type_service"
+            android:textStyle="bold"
+            android:layout_marginLeft="7dp"/>
+        <Spinner
+            android:id="@+id/spinner_service_types"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"
+            android:background="@android:drawable/btn_dropdown"/>
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/problem_des"
+            android:textStyle="bold"
+            android:layout_marginLeft="7dp"/>
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rect_background"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set_appoint_dates"
+            android:textStyle="bold"
+            android:layout_marginLeft="7dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/date_select"
+                android:layout_width="115dp"
+                android:layout_height="50dp"
+                android:text="@string/date"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:onClick="onClick"
+                android:clickable="true"/>
+            <Spinner
+                android:id="@+id/spinner_time"
+                android:layout_width="133dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
+                android:background="@android:drawable/btn_dropdown"/>
+            <ImageView
+                android:id="@+id/_add"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/ic_add"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/inner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_appoint"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/submit"
+            android:background="#FFEB3B"
+            />
+        </LinearLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>
